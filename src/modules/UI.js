@@ -53,7 +53,7 @@ closeBtn.addEventListener('click', () => {
     modal.style.display = "none";
 });
 
-window.addEventListener('click', (e) => {
+window.addEventListener('mousedown', (e) => {
     if (e.target == modal) {
         modal.style.display = "none";
     }
@@ -176,7 +176,7 @@ function editListName(e) {
             editMode = false;
             showHeader.style.display = 'flex';
             editListHeader.style.display = 'none';
-            window.removeEventListener('click', removeFocus)
+            window.removeEventListener('mousedown', removeFocus)
         }
     };
 };
