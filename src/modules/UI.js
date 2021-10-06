@@ -22,7 +22,7 @@ import {
 const body = document.querySelector('body');
 
 body.innerHTML = `
-<header><h1>Tremollo</h1></header>
+<header><h1>tremollo</h1></header>
 <main>
     <div id="main-list">
     </div>
@@ -31,6 +31,7 @@ body.innerHTML = `
     <button id="btn-new-list">+ New</button>
     </form>
 </main>
+<footer>by&nbsp;<a href="https://www.janebui.com" target="_blank">Jane Bui</a>&nbsp;|&nbsp;<a href="https://github.com/janebui/tremollo" target="_blank">Github Repo</a></footer>
 `;
 
 const mainDiv = document.querySelector('#main-list');

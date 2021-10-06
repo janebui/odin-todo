@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 html {
   height: 100%;
@@ -8,25 +9,20 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   color: #312c2a;
-  background: repeating-linear-gradient(
-  45deg,
-  #ADD9D8,
-  #ADD9D8 10px,
-  #9dcac9 10px,
-  #9dcac9 20px
-  );
+  background: repeating-linear-gradient(45deg,
+      #ADD9D8,
+      #ADD9D8 10px,
+      #9dcac9 10px,
+      #9dcac9 20px);
   background-attachment: fixed;
-  margin: 8px;
 }
 
 main {
   display: flex;
-
 }
 
 #main-list {
   display: flex;
-  flex-flow: nowrap;
 }
 
 header {
@@ -39,9 +35,10 @@ header {
 h1 {
   color: #fff;
   margin: 0 0 8px 0;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
 }
 
 h3 {
@@ -55,13 +52,15 @@ h3 {
   grid-template-rows: 28px;
 }
 
-.pencil-btn, .del-list-btn {
+.pencil-btn,
+.del-list-btn {
   background-color: transparent;
   fill: #79706b;
   padding: 2px;
 }
 
-.pencil-btn:hover, .del-list-btn:hover {
+.pencil-btn:hover,
+.del-list-btn:hover {
   fill: black;
 }
 
@@ -113,12 +112,18 @@ h3 {
   box-shadow: 0 0 1px 1px #3dd9d6;
 }
 
-.edit-list-save, #btn-new-list, .show-add, #confirm-btn {
+.edit-list-save,
+#btn-new-list,
+.show-add,
+#confirm-btn {
   background-color: #2a93d6;
   text-align: center;
 }
 
-#btn-new-list:hover, .pencil-btn:hover, .del-list-btn:hover, .show-add:hover,
+#btn-new-list:hover,
+.pencil-btn:hover,
+.del-list-btn:hover,
+.show-add:hover,
 #confirm-btn:hover {
   background-color: #3dd9d6;
 }
@@ -133,7 +138,7 @@ h3 {
 #btn-new-list {
   height: 40px;
   width: 80px;
-
+  margin-right: 8px;
 }
 
 .list {
@@ -170,7 +175,8 @@ button {
   cursor: pointer;
 }
 
-.show-add, #confirm-btn {
+.show-add,
+#confirm-btn {
   width: 40px;
   height: 40px;
   align-self: flex-end;
@@ -325,10 +331,25 @@ textarea {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  color: #22394b;
+}
+
+a:link {
+  color: #115488;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: #3dd9d6;
+}
+
 @media only screen and (max-width: 600px) {
-  .list { 
-    margin: 0 0 8px 0;
-    width: 100%;
+  main {
+    flex-flow: wrap;
   }
 
   #main-list {
@@ -336,7 +357,12 @@ textarea {
     flex-flow: wrap;
   }
 
-  main {
-    flex-flow: wrap;
+  .list {
+    margin: 0 0 8px 0;
+    width: 100%;
+  }
+
+  #btn-new-list {
+    margin-right: 0;
   }
 }
