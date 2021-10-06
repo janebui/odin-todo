@@ -84,7 +84,8 @@ h3 {
 #form-new-list {
   display: flex;
   height: 40px;
-  min-width: 250px;
+  min-width: 300px;
+  width: 316px;
 }
 
 .edit-list-header {
