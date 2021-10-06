@@ -84,7 +84,7 @@ h3 {
 #form-new-list {
   display: flex;
   height: 40px;
-  width: 316px;
+  min-width: 300px;
 }
 
 .edit-list-header {
@@ -99,7 +99,6 @@ h3 {
   border-radius: 5px 0 0 5px;
   border: 0;
   padding: 8px;
-  min-width: 100px;
 }
 
 #input-new-list {
@@ -131,13 +130,13 @@ h3 {
 .edit-list-save,
 #btn-new-list {
   border-radius: 0 5px 5px 0;
-  padding: 8px;
+  padding: 8px 0;
   font-family: 'Quicksand', sans-serif;
 }
 
 #btn-new-list {
   height: 40px;
-  width: 80px;
+  width: 150px;
   margin-right: 8px;
 }
 
@@ -364,5 +363,9 @@ a:hover {
 
   #btn-new-list {
     margin-right: 0;
+  }
+
+  #form-new-list {
+    min-width: 200px;
   }
 }

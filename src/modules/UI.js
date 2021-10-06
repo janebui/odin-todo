@@ -28,7 +28,7 @@ body.innerHTML = `
     </div>
     <form id="form-new-list">
     <input id="input-new-list" type="text" required>
-    <button id="btn-new-list">+ New</button>
+    <button id="btn-new-list">+ New List</button>
     </form>
 </main>
 <footer>by&nbsp;<a href="https://www.janebui.com" target="_blank">Jane Bui</a>&nbsp;|&nbsp;<a href="https://github.com/janebui/tremollo" target="_blank">Github Repo</a></footer>
